@@ -17,7 +17,7 @@ public class MsgConsumer extends Thread{
     public void run() {
         while (true) {
             String message = blkQueue.pop();
-//            System.out.println(message + " ==> consumer " + getId());
+            System.out.println(message + " ==> consumer " + getId());
             try { // simulate message handling
                 Thread.sleep(msgHandlingTimeMillis);
             } catch (InterruptedException e) {

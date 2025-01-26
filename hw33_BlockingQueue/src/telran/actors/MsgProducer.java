@@ -28,7 +28,7 @@ public class MsgProducer extends Thread{
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-//            System.out.println(message + " <== producer " + getId());
+            System.out.println(message + " <== producer " + getId());
         }
     }
 }
